@@ -1,27 +1,24 @@
 package com.bearcat.remembear.remembear;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.TextView;
 
 /**
  * Home: this should be the general landing page of the app.
- * TODO: this home activity is too heavy, we should simplify it. I added some default stuff for now.
+ *
+ * TODO: this home activity is too heavy, we should simplify it.
+ * TODO: I added some default stuff for now as example placeholders, can change as we see fit.
  */
 public class HomeActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -108,13 +105,13 @@ public class HomeActivity extends ActionBarActivity
     }
 
     /**
-     * Defines click event for button.
+     * Takes the user to create a new reminder.
      *
      * @param view
      */
-    public void buttonOnClick(View view) {
-        Button button = (Button) view;
-        button.setText("Herro Werld");
+    public void onCreateReminderClick(View view) {
+        Intent intent = new Intent(this, ReminderActivity.class);
+        startActivity(intent);
     }
 
     /**
