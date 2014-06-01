@@ -3,13 +3,26 @@ remembear
 
 RememBear helps you remember, so you don't have to!
 
-### Issues
+### General To Do's
+[ ] Create a reminder
+  [ ] data model
+    [x] name
+    [x] description
+    [ ] frequency
+    [ ] date range
+    [ ] status
+  [ ] ui
+    [x] creation
+    [ ] list
+    [ ] edit
+    [ ] share
+  [ ] persistence
+    [ ] db
+    [ ] schemas
+    [ ] mappings
 
-### TODO
-* Create a reminder
-  * data model
-  * ui
-    * creation
-    * list
-  * persistence
-* Generate a reminder to show
+[ ] Generate a reminder to show
+  [x] broadcast and receive intents
+  [ ] trigger based on frequency and status
+  [ ] bound by date range 
+
